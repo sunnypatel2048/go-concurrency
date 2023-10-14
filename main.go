@@ -13,14 +13,14 @@ var (
 )
 
 func main() {
-	// evilNinjas := []string{"Tommy", "Jony", "Bobby", "Andy"}
-	// withoutConcurrency(evilNinjas)
-	// withConcurrencyNoChannel(evilNinjas)
-	// withConcurrencyWithChannel("Tommy")
-	// withBufferedChannel()
-	// withConcurrencyWithChannelIterationAndClosing()
-	// withConcurrencyWithWaitGroup(evilNinjas)
-	// withConcurrencyWithMutex()
+	evilNinjas := []string{"Tommy", "Jony", "Bobby", "Andy"}
+	withoutConcurrency(evilNinjas)
+	withConcurrencyNoChannel(evilNinjas)
+	withConcurrencyWithChannel("Tommy")
+	withBufferedChannel()
+	withConcurrencyWithChannelIterationAndClosing()
+	withConcurrencyWithWaitGroup(evilNinjas)
+	withConcurrencyWithMutex()
 }
 
 func withoutConcurrency(evilNinjas []string) {
